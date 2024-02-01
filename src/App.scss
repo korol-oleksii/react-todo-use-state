@@ -1,10 +1,8 @@
 .App {
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 4px 0 transparentize(#000, .95);
   max-width: 800px;
   margin: 0 auto;
   padding: 48px 16px;
 }
-
-/*# sourceMappingURL=App.css.map */

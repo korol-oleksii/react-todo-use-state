@@ -1,0 +1,80 @@
+.todo__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.todo__form--label {
+  display: flex;
+}
+.todo__input {
+  border: 1px solid #606060;
+  border-radius: 16px 0 0 16px;
+  background-color: transparent;
+  min-height: 40px;
+  padding: 0 12px;
+  transition: 0.15s;
+  flex: 1 1 auto;
+}
+.todo__input:focus {
+  border-color: #404040;
+}
+.todo__button {
+  min-height: 40px;
+  background-color: #606060;
+  border: none;
+  margin-left: -1px;
+  min-width: 80px;
+  border-radius: 0 16px 16px 0;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.todo__button:hover {
+  opacity: 0.85;
+}
+.todo__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.todo__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px 24px;
+  animation: load 0.5s ease-in-out;
+  transition: 0.2s;
+}
+.todo__item:hover {
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.05);
+}
+.todo__row, .todo__label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+.todo__completed {
+  transition: 0.25s;
+  animation: load 0.2s ease-in-out;
+}
+.todo__icon-remove {
+  font-size: 26px;
+  cursor: pointer;
+  color: darkred;
+}
+.todo__date {
+  font-size: 12px;
+  color: #606060;
+  margin-left: auto;
+}
+.todo__no-task {
+  color: #606060;
+  padding: 16px;
+}
+
+/*# sourceMappingURL=Todos.css.map */

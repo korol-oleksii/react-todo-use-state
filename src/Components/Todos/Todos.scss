@@ -1,0 +1,86 @@
+.todo {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  &__form {
+    &--label {
+      display: flex;
+    }
+  }
+  &__input {
+    border: 1px solid #606060;
+    border-radius: 16px 0 0 16px;
+    background-color: transparent;
+    min-height: 40px;
+    padding: 0 12px;
+    transition: .15s;
+    flex: 1 1 auto;
+
+    &:focus {
+      border-color: #404040;
+    }
+  }
+  &__button {
+    min-height: 40px;
+    background-color: #606060;
+    border: none;
+    margin-left: -1px;
+    min-width: 80px;
+    border-radius: 0 16px 16px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+      opacity: .85;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px 24px;
+    animation: load .5s ease-in-out;
+    transition: .2s;
+
+    &:hover {
+      box-shadow: 0 0 12px 0 transparentize(#000, .95);
+    }
+  }
+  &__row,
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+  }
+  &__completed {
+    transition: .25s;
+    animation: load .2s ease-in-out;
+  }
+  &__icon-remove {
+    font-size: 26px;
+    cursor: pointer;
+    color: darkred;
+  }
+  &__date {
+    font-size: 12px;
+    color: #606060;
+    margin-left: auto;
+  }
+  &__no-task {
+    color: #606060;
+    padding: 16px;
+  }
+}
